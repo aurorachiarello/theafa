@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	 <meta charset="utf-8">
+	      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link href="bootstrap.css" rel="stylesheet"> 
+    <link href="bootstrap-responsive.css" rel="stylesheet"> 
+    <link href='http://fonts.googleapis.com/css?family=Asap' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>	
+ 
+
+    <meta content="" name="description">
+	<meta content="" name="keyword">
+
+
+<title>Australian Fashion Association</title>
+</head>
+
+
+<body>	
+
+
+	
+	<!-- background image -->
+		<div class="row-fluid">
+			<div class="hero span12">
+		    	<img src="img/hero.jpg"/>
+			</div>	
+		</div>
+	
+	
+	<!-- promotion -->
+		<div class="win row-fluid">
+			<div class="win-content span8 offset2">
+	
+			<!-- win image -->			
+					<div class="win-image span3">
+						<img src="img/win.png"/>
+					</div>
+				
+			<!-- form -->			
+						<form class="form-inline span9"  method="post" id="myform" action="http://www.aweber.com/scripts/addlead.pl">
+						
+						<input type="hidden" name="meta_web_form_id" value="1983465626" />
+						<input type="hidden" name="meta_split_id" value="" />
+						<input type="hidden" name="listname" value="afalist" />
+						<input type="hidden" name="redirect" value="http://www.aweber.com/thankyou.htm?m=default" id="redirect_af777afd66f01958f557301b0403006a" />
+						
+						<input type="hidden" name="meta_adtracking" value="AFA_List" />
+						<input type="hidden" name="meta_message" value="1" />
+						<input type="hidden" name="meta_required" value="name,email,custom placeholder1,custom placeholder2,custom placeholder3" />					
+							
+						<!-- logo -->			
+						<div class="logo row-fluid">	
+							<legend>
+							    <img src="img/logo-black.png"/>
+							</legend>
+						</div>		
+						<!-- name -->
+									
+								<div class="control-group name">
+								    <label class="control-name span1 offset1" for="inputName">Name</label>
+								    <div class="controls form-inline">
+								      <input type="text" name="name" class="input span8" id="inputName" placeholder="First, Last">
+								    </div>
+								 </div>
+						
+						<!-- email -->			
+								 <div class="control-group email">
+								    <label class="control-email span1 offset1" for="inputEmail">Email</label>
+								    <div class="controls form-inline">
+								      <input type="email" name="email" class="input span8" id="inputEmail" placeholder="Email">
+								    </div>
+								 </div>
+						
+						<!-- question -->				  
+								 <div class="control-group question">
+								    <label class="control-question span12" for="inputQuestion">What top 3 labels would you like to shop for?</label>
+								    <div class="controls">
+								      <input type="text" name="custom placeholder1" class="input span3" id="inputQuestion1" placeholder="1.">
+								      <input type="text" name="custom placeholder2" class="input span3" id="inputQuestion2" placeholder="2.">
+								      <input type="text" name="custom placeholder3" class="input span3" id="inputQuestion3" placeholder="3.">
+								    </div>
+								 </div>
+						
+						<!-- submit button -->				  								 
+							<div class="submit row">
+								 	<a href="#" id="submit-button">SUBMIT</a> 
+							</div> 	
+						</form> 
+					
+					</div>           
+			</div>		
+		</div>
+	
+	<!-- footer -->
+		<div class="footer container-fluid">
+			<div class="row-fluid">
+			<div class="footer-content span8 offset2">
+				
+				<!-- footer contents -->			
+					<div class="row-fluid">
+				
+						<!-- afa logo -->			
+							<div class="AFA-logo span3">
+								<img src="img/logo.png"/>
+							</div>
+
+				<!-- afa slogan -->									
+						<div class="AFA-slogan span6">
+							<img src="img/slogan.png"/>
+							<p> For more information or to partner AFA please email  <a href="mailto:pr@theafa.com.au"> pr@the<b>afa</b>.com.au </a> for an information pack. </p>
+						</div>
+						
+				<!-- afa social -->									
+						<div class="AFA-social span3">
+							
+							<!-- facebook -->								
+								<div class="facebook">
+									<a href="https://www.facebook.com/pages/The-Australian-Fashion-Association/336895943069104"> <img src="img/fb_white.png"/> </a>
+								</div>
+								
+							<!-- instagram -->									
+								<div class="instagram">
+									<a href="http://statigr.am/afa_fashion_association"> <img src="img/instagram_white.png"/> </a>
+								</div>	
+						</div>
+						
+					</div>	
+			</div>
+			</div>
+		</div>
+
+
+    <script src="js/jquery.js"></script> 
+    
+    <script>
+ 
+	  var should_i_submit_form = false;
+	  
+	  
+	  
+	  
+	   $('#submit-button').on('click', function(e) { 
+	
+	
+	      e.preventDefault();
+		  var form = $('#myform');
+		  
+		  
+		  // TODO: fix the color of the border
+		  form.find('input[type="text"]').css('border', '1px #cccccc solid');
+		  
+		  should_i_submit_form = true;
+		  
+		  if ( $('#inputName').val() == 0 ) {
+			  $('#inputName').css('border', '1px #de3113 solid');
+			  should_i_submit_form =  false;
+		  }
+		  
+		  if ( $('#inputEmail').val() == 0 ) {
+			  $('#inputEmail').css('border', '1px #de3113 solid');
+			  should_i_submit_form =  false;
+		  }
+		  
+		  if ( $('#inputQuestion1').val() == 0 ) {
+			  $('#inputQuestion1').css('border', '1px #de3113 solid');
+			  should_i_submit_form =  false;
+		  }		  
+		  
+		  if ( $('#inputQuestion2').val() == 0 ) {
+			  $('#inputQuestion2').css('border', '1px #de3113 solid');
+			  should_i_submit_form =  false;
+		  }	
+		  
+		  if ( $('#inputQuestion3').val() == 0 ) {
+			  $('#inputQuestion3').css('border', '1px #de3113 solid');
+			  should_i_submit_form =  false;
+		  }	
+		  		  		  	  		  
+		  console.log(should_i_submit_form);
+		  
+		  if (should_i_submit_form == true) {
+			  form.submit();
+		  }
+		  
+		  return false;
+		  
+	  });
+	
+	 </script>
+	 
+	 <script src="js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

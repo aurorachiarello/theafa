@@ -1,0 +1,373 @@
+html,body{
+	float: center;
+	margin:0 !important;
+	padding: 0;
+    text-align:center !important;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+html{
+	font-size: 21.5px; 
+}
+
+body{
+	font-family: 'Asap', 'Arial',  sans-serif;
+	font-size: 67.3%;	
+}
+
+
+
+/*-----hero image-----*/
+/*----------------*/
+
+.hero img{
+	min-width: 100%;
+	display: block;
+}
+
+
+
+/*-----win-----*/
+/*--------------*/
+
+.win{
+	margin-left: 0 !important;
+	margin-top: 1.5em;
+	padding: 0 !important;
+	border-bottom: 1px white solid;	
+	height: 100%;
+}
+
+.win-image img{
+	max-width: 94%;
+}
+
+.logo{
+	text-align: right;
+}
+
+.logo img{
+	max-width: 8em;
+	margin-right: 1.5em;
+	margin-bottom: .5em;
+	margin-top: .1em;
+	
+}
+
+
+
+/*-----form-----*/
+
+.form-inline{
+	background-color: white;
+	height: 100%;
+}
+
+label, input, button, select, textarea{
+	font-family: 'Asap', 'Arial',  sans-serif;
+	font-size: 1.5em;
+	max-height: 1.5em;
+}
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input{
+		font-family: 'Asap', 'Arial',  sans-serif;
+		font-size: 1.2em;
+}
+
+.question{
+	padding-top: .5em;
+}
+
+.controls .form-inline{
+	text-align: left;
+}
+
+.submit{
+	background-color: #de3113;
+	width: 7em;
+	height: 1.8em;
+	moz-border-radius: .4em;
+	border-radius: .4em; 
+	color: white;
+	float: right !important;
+	margin-right: 2.5em;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	vertical-align: middle;
+}
+
+
+#submit-button{
+	font-family: 'Asap', 'Arial',  sans-serif;
+	font-size: 140%;
+	line-height: 130%;
+	color: white;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+#submit-button: hover{
+	color: black;
+	text-decoration: none;
+}
+
+
+
+/*-----footer-----*/
+/*----------------*/
+
+.footer{
+	height: 10em;
+	text-align: center;
+}
+
+.footer-content{
+	vertical-align: baseline;
+	margin-top: 2em;
+}
+
+/*-----afa logo-----*/
+
+.AFA-logo{
+	text-align: center;
+	display: block !important;
+	margin-bottom: 1em;
+}
+
+.AFA-logo img{
+	width: 16em;
+}
+
+
+/*-----afa slogan-----*/
+
+.AFA-slogan{
+	padding-top: .6em !important;
+	text-align: center;
+	display: block;
+	max-width: 100%;
+}
+
+.AFA-slogan img{
+	width: 42em;
+}
+
+.AFA-slogan p{
+	margin-left: 0 !important;
+	text-align: center;
+	font-family: 'Asap', 'Arial',  sans-serif;
+	font-size: 100%;
+	letter-spacing: .48px;
+	color: white;
+	line-height: 1.3em;
+	padding-top: .6em;
+}
+
+.AFA-slogan a{
+	text-decoration: none;
+	color: white;
+}
+
+.AFA-slogan a:hover{
+	text-decoration: underline;
+	color: white;
+}
+
+
+/*-----afa social-----*/
+
+.AFA-social{
+	text-align: center;;
+	margin-top: 3.5em;
+	display: block !important;;
+	width: 7em;
+	vertical-align: baseline !important;
+}
+
+.facebook{
+	display: inline-block;
+	bottom: 0 !important;
+}
+
+.facebook a:hover{
+	opacity: .65;
+}
+
+.instagram{
+	display: inline-block;
+	bottom: 0 !important;
+}
+
+.instagram a:hover{
+	opacity: .65;
+}
+
+.facebook img{
+	width: 2.4em;
+}
+
+.instagram img{
+	width: 8.5em;
+	padding-left: .7em; 
+}
+
+
+
+
+
+
+
+
+
+
+/*-----RESPONSIVENESS-----*/
+/*------------------------*/
+
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 1024px) {
+	
+	/*-----afa social-----*/
+
+	.AFA-social{
+		text-align: center;;
+		margin-top: 2.5em;
+		display: block !important;;
+		vertical-align: baseline !important;
+	}
+	
+	.facebook img{
+		width: 2.5em;
+	}
+	
+	.instagram img{
+		width: 6em;
+	}
+	
+	body{
+		font-size: 47.3%;;
+	}
+}
+ 
+ 
+	
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+	/*-----afa social-----*/
+
+	.footer{
+		margin-left: 2em;
+		margin-right: 2em;
+	}
+	
+	.AFA-social{
+		text-align: center;;
+		margin-top: 2em;
+		margin-bottom: 1em;
+		display: block !important;;
+		vertical-align: baseline !important;
+	}
+	
+	.facebook img{
+		width: 2.5em;
+	}
+	
+	.instagram img{
+		width: 6em;
+	}
+	
+	body{
+		font-size: 47.3%;;
+	}
+	
+	html,body{
+		float: center;
+		margin:0 !important;
+	}
+	
+	/*-----form-----*/
+	
+	.win{
+		margin-left: 0 !important;
+		margin-top: 1.5em;
+		padding: 0 !important;
+		border-bottom: 1px white solid;	
+		height: 100%;
+	}
+	
+	.win-image{
+		background-color: black;
+		max-width: 50%;
+		margin-left: auto !important;
+		margin-right: auto !important;
+		margin-bottom: 1em;
+	}
+	
+	.form-inline{
+		background-color: white;
+		height: 100%;
+		margin-left: 2em;
+		margin-right: 2em;
+	}
+	
+	.controls{
+		margin-left: 2em;
+		margin-right: 2em;
+	}
+	
+	.submit{
+		background-color: #de3113;
+		width: 7em;
+		height: 1.8em;
+		moz-border-radius: .4em;
+		border-radius: .4em; 
+		color: white;
+		float: right !important;
+		margin-right: 2.5em;
+		margin-bottom: 1em;
+		margin-top: 1em;
+		vertical-align: middle;
+	}
+
+	#submit-button{
+		font-family: 'Asap', 'Arial',  sans-serif;
+		font-size: 115%;
+		line-height: 170%;
+		color: white;
+		-webkit-transition: all .5s ease;
+		-moz-transition: all .5s ease;
+		-o-transition: all .5s ease;
+		-ms-transition: all .5s ease;
+		transition: all .5s ease;
+	}
+}
+ 
+@media all and (min-width: 1800px){
+	body{
+		font-size: 67.3%;;
+	}
+}		
+  
+@media all and (min-width: 1500px) and (max-width: 1799px){
+	body{
+		font-size: 57.3%;
+	}
+}
+    
+@media all and (min-width: 1100px) and (max-width: 1499px){
+	body{
+		font-size: 47.3%;
+	}
+}
+      
+@media all and (min-width: 800px) and (max-width: 1099px){
+	body{
+		font-size: 47.3%;
+	}
+}
